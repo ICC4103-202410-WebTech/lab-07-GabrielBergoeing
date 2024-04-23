@@ -1,0 +1,18 @@
+<h3><%=User.find(@post.user_id).name=%></h3>
+<h1><%=@post.title=%></h1>
+
+<table>
+    <tr>
+        <td>Content</td>
+        <td>Published At</td>
+        <td>Answers</td>
+        <td>Likes</td>
+    </tr>
+    <tr>
+        <td><%=@post.content=%></td>
+        <td><%=@post.published_at=%></td>
+        <td><%=@post.answers_count=%></td>
+        <td><%=@post.likes_count=%></td>
+    </tr>
+</table>
+<%= link_to 'Volver', posts_path =%>
